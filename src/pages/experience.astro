@@ -3,9 +3,9 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import localPhoto from '../../images/photo.png';
 import Sidebar from '../components/Sidebar.astro';
-import Conctact from '../components/Conctact.astro';
+import Experience from '../components/Experience.astro';
 
-const currentSite = 'contact'
+const currentSite = 'experience'
 ---
 
 <Layout title="Welcome to Astro.">
@@ -14,7 +14,7 @@ const currentSite = 'contact'
 			<div class="bg-white flex flex-shrink-0">
 				<Image src={localPhoto} alt="Self-Photo" width="300" height="200" />
 			</div>
-			<Conctact/>
+			<Experience/>
 			<Sidebar currentSite={currentSite}/>
 		</div>
 	</main>
